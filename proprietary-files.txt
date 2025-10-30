@@ -3333,7 +3333,6 @@ odm/lib64/vendor.xiaomi.hardware.framecapturemanager-V1-ndk.so
 odm/lib64/libfcmintf.so
 odm/lib64/libframecapturemanager.so
 odm/lib64/libbarrage.so
-vendor/lib64/xiaomi.system.hypsys.common-V1-ndk.so
 vendor/lib64/libopencl_loader.so
 odm/lib64/libarc.ion.so
 odm/lib64/libminikin.xiaomi.so
