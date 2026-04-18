@@ -30,9 +30,9 @@ SAKURA_BUILD_TYPE := gapps
 TARGET_BOOT_ANIMATION_RES := 1440
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc=$(call normalize-path-list, "zorn zorn 15 AQ3A.240829.003 OS2.0.202.0.VOKMIXM release-keys")
+    BuildDesc=$(call normalize-path-list, "zorn zorn 16 BP2A.250605.031.A3 OS3.0.8.0.WOKMIXM release-keys")
 
-BUILD_FINGERPRINT := Xiaomi/zorn/zorn:15/AQ3A.240829.003/OS2.0.202.0.VOKMIXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/zorn/zorn:16/BP2A.250605.031.A3/OS3.0.8.0.WOKMIXM:user/release-keys
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
