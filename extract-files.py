@@ -150,6 +150,39 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/soundfx/libhwdap.so',
     ): blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
+    (
+        'vendor/lib64/libaodoptfeature.so',
+        'vendor/lib64/libapengine.so',
+        'vendor/lib64/libdpps.so',
+        'vendor/lib64/libgamepoweroptfeature.so',
+        'vendor/lib64/liblearningmodule.so',
+        'vendor/lib64/liboffscreenpoweroptfeature.so',
+        'vendor/lib64/libpowercallback.so',
+        'vendor/lib64/libpowercore.so',
+        'vendor/lib64/libpsmoptfeature.so',
+        'vendor/lib64/libsnapdragoncolor-manager.so',
+        'vendor/lib64/libstandbyfeature.so',
+        'vendor/lib64/libvideooptfeature.so',
+        'odm/lib64/hw/displayfeature.default.so',
+        'vendor/bin/hw/vendor.qti.hardware.display.composer-service',
+        'vendor/bin/poweropt-service',
+        'vendor/bin/qvrdatauploader',
+        'odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl',
+    ): blob_fixup()
+        .replace_needed(
+            'libtinyxml2.so',
+            'libtinyxml2-v34.so',
+    ),
+
+        'odm/lib64/hw/displayfeature.default.so': blob_fixup()
+            .replace_needed(
+                'android.hardware.sensors-V2-ndk.so',
+                'android.hardware.sensors-V3-ndk.so',
+            )
+            .replace_needed(
+                'libtinyxml2.so',
+                'libtinyxml2-v34.so',
+    ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
